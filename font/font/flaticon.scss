@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?68110c669ebff230bab1e1d2ecb74a41") format("truetype"),
+url("./flaticon.woff?68110c669ebff230bab1e1d2ecb74a41") format("woff"),
+url("./flaticon.woff2?68110c669ebff230bab1e1d2ecb74a41") format("woff2"),
+url("./flaticon.eot?68110c669ebff230bab1e1d2ecb74a41#iefix") format("embedded-opentype"),
+url("./flaticon.svg?68110c669ebff230bab1e1d2ecb74a41#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "building": "\f101",
+    "clip": "\f102",
+    "coach": "\f103",
+    "diagram": "\f104",
+    "play-button": "\f105",
+    "profits": "\f106",
+);
+
+.flaticon-building:before {
+    content: map-get($flaticon-map, "building");
+}
+.flaticon-clip:before {
+    content: map-get($flaticon-map, "clip");
+}
+.flaticon-coach:before {
+    content: map-get($flaticon-map, "coach");
+}
+.flaticon-diagram:before {
+    content: map-get($flaticon-map, "diagram");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-profits:before {
+    content: map-get($flaticon-map, "profits");
+}
